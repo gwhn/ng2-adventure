@@ -6,6 +6,7 @@ import { HelloListComponent } from './hello-list';
 import { ClickButtonComponent } from './click-button';
 import { BoundInputComponent } from './bound-input';
 import { ClassHostOptionComponent } from './class-host-option';
+import { ActionLinksComponent } from './action-links';
 
 @Component({
   moduleId: module.id,
@@ -18,7 +19,8 @@ import { ClassHostOptionComponent } from './class-host-option';
     HelloListComponent,
     ClickButtonComponent,
     BoundInputComponent,
-    ClassHostOptionComponent
+    ClassHostOptionComponent,
+    ActionLinksComponent
   ]
 })
 export class AppComponent {
