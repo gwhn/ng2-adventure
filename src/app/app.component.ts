@@ -4,6 +4,7 @@ import { HelloWorldComponent } from './hello-world';
 import { HelloNameComponent } from './hello-name';
 import { HelloListComponent } from './hello-list';
 import { ClickButtonComponent } from './click-button';
+import { BoundInputComponent } from './bound-input';
 
 @Component({
   moduleId: module.id,
@@ -14,7 +15,8 @@ import { ClickButtonComponent } from './click-button';
     HelloWorldComponent,
     HelloNameComponent,
     HelloListComponent,
-    ClickButtonComponent
+    ClickButtonComponent,
+    BoundInputComponent
   ]
 })
 export class AppComponent {
