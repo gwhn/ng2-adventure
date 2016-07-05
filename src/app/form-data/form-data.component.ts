@@ -21,5 +21,8 @@ export class FormDataComponent implements OnInit {
 
   add(id: HTMLInputElement, text: HTMLInputElement, optional: HTMLInputElement): void {
     this.newData.emit(new MyData(parseInt(id.value, 10), text.value, optional.value));
+    id.value = '';
+    text.value = '';
+    optional.value = '';
   }
 }

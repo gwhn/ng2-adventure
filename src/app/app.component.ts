@@ -39,4 +39,18 @@ export class AppComponent {
   addData(newData: MyData): void {
     this.myData.push(newData);
   }
+
+  sortedData(): MyData[] {
+    return this.myData.sort((a: MyData, b: MyData) => {
+      const aText: string = a.text.toLowerCase();
+      const bText: string = b.text.toLowerCase();
+      if (aText < bText) {
+        return -1;
+      } else if (aText > bText) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+  }
 }
