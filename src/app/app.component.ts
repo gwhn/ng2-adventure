@@ -7,6 +7,7 @@ import { ClickButtonComponent } from './click-button';
 import { BoundInputComponent } from './bound-input';
 import { ClassHostOptionComponent } from './class-host-option';
 import { ActionLinksComponent } from './action-links';
+import { DataModelComponent } from './data-model';
 
 @Component({
   moduleId: module.id,
@@ -20,7 +21,8 @@ import { ActionLinksComponent } from './action-links';
     ClickButtonComponent,
     BoundInputComponent,
     ClassHostOptionComponent,
-    ActionLinksComponent
+    ActionLinksComponent,
+    DataModelComponent
   ]
 })
 export class AppComponent {
