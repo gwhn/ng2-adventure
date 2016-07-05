@@ -7,7 +7,7 @@ import { ClickButtonComponent } from './click-button';
 import { BoundInputComponent } from './bound-input';
 import { ClassHostOptionComponent } from './class-host-option';
 import { ActionLinksComponent } from './action-links';
-import { DataModelComponent } from './data-model';
+import { DataModelComponent, MyData } from './data-model';
 
 @Component({
   moduleId: module.id,
@@ -27,4 +27,9 @@ import { DataModelComponent } from './data-model';
 })
 export class AppComponent {
   title = 'ng2 Adventure';
+
+  myData: MyData[] = [
+    new MyData(1, 'first'),
+    new MyData(2, 'second', 'different')
+  ];
 }

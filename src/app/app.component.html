@@ -16,4 +16,4 @@
 <hr>
 <action-links></action-links>
 <hr>
-<data-model></data-model>
+<data-model *ngFor="let thisData of myData" [myData]="thisData"></data-model>

@@ -4,15 +4,14 @@ import { Component, OnInit } from '@angular/core';
   moduleId: module.id,
   selector: 'data-model',
   templateUrl: 'data-model.component.html',
-  styleUrls: ['data-model.component.css']
+  styleUrls: ['data-model.component.css'],
+  inputs: ['myData']
 })
 export class DataModelComponent implements OnInit {
 
   myData: MyData;
 
-  constructor() {
-    this.myData = new MyData(1, 'something');
-  }
+  constructor() {}
 
   ngOnInit() {
   }
@@ -22,7 +21,7 @@ export class DataModelComponent implements OnInit {
 /**
  * MyData
  */
-class MyData {
+export class MyData {
   constructor(public id: number, public text: string, public optional?: string) {
     this.optional = optional || 'default';
   }
