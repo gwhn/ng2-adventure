@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { HelloWorldComponent } from './hello-world';
 import { HelloNameComponent } from './hello-name';
 import { HelloListComponent } from './hello-list';
+import { ClickButtonComponent } from './click-button';
 
 @Component({
   moduleId: module.id,
@@ -12,7 +13,8 @@ import { HelloListComponent } from './hello-list';
   directives: [
     HelloWorldComponent,
     HelloNameComponent,
-    HelloListComponent
+    HelloListComponent,
+    ClickButtonComponent
   ]
 })
 export class AppComponent {
