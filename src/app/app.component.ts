@@ -5,6 +5,7 @@ import { HelloNameComponent } from './hello-name';
 import { HelloListComponent } from './hello-list';
 import { ClickButtonComponent } from './click-button';
 import { BoundInputComponent } from './bound-input';
+import { ClassHostOptionComponent } from './class-host-option';
 
 @Component({
   moduleId: module.id,
@@ -16,7 +17,8 @@ import { BoundInputComponent } from './bound-input';
     HelloNameComponent,
     HelloListComponent,
     ClickButtonComponent,
-    BoundInputComponent
+    BoundInputComponent,
+    ClassHostOptionComponent
   ]
 })
 export class AppComponent {

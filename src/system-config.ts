@@ -38,6 +38,7 @@ const barrels: string[] = [
   'app/hello-list',
   'app/click-button',
   'app/bound-input',
+  'app/class-host-option',
   /** @cli-barrel */
 ];
 
