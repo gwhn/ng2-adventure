@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { HelloWorldComponent } from './hello-world';
 import { HelloNameComponent } from './hello-name';
+import { HelloListComponent } from './hello-list';
 
 @Component({
   moduleId: module.id,
@@ -10,7 +11,8 @@ import { HelloNameComponent } from './hello-name';
   styleUrls: ['app.component.css'],
   directives: [
     HelloWorldComponent,
-    HelloNameComponent
+    HelloNameComponent,
+    HelloListComponent
   ]
 })
 export class AppComponent {
