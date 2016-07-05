@@ -16,4 +16,8 @@
 <hr>
 <action-links></action-links>
 <hr>
+<p>
+  This component uses a model class to store the data
+</p>
+<form-data (newData)="addData($event)"></form-data>
 <data-model *ngFor="let thisData of myData" [myData]="thisData"></data-model>

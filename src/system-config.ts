@@ -41,6 +41,7 @@ const barrels: string[] = [
   'app/class-host-option',
   'app/action-links',
   'app/data-model',
+  'app/form-data',
   /** @cli-barrel */
 ];
 

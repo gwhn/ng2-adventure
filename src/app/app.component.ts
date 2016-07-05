@@ -7,7 +7,9 @@ import { ClickButtonComponent } from './click-button';
 import { BoundInputComponent } from './bound-input';
 import { ClassHostOptionComponent } from './class-host-option';
 import { ActionLinksComponent } from './action-links';
-import { DataModelComponent, MyData } from './data-model';
+import { DataModelComponent } from './data-model';
+import { FormDataComponent } from './form-data';
+import { MyData } from './my-data';
 
 @Component({
   moduleId: module.id,
@@ -22,7 +24,8 @@ import { DataModelComponent, MyData } from './data-model';
     BoundInputComponent,
     ClassHostOptionComponent,
     ActionLinksComponent,
-    DataModelComponent
+    DataModelComponent,
+    FormDataComponent
   ]
 })
 export class AppComponent {
@@ -32,4 +35,8 @@ export class AppComponent {
     new MyData(1, 'first'),
     new MyData(2, 'second', 'different')
   ];
+
+  addData(newData: MyData): void {
+    this.myData.push(newData);
+  }
 }

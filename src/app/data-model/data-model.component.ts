@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MyData } from '../my-data';
 
 @Component({
   moduleId: module.id,
@@ -18,11 +19,3 @@ export class DataModelComponent implements OnInit {
 
 }
 
-/**
- * MyData
- */
-export class MyData {
-  constructor(public id: number, public text: string, public optional?: string) {
-    this.optional = optional || 'default';
-  }
-}
