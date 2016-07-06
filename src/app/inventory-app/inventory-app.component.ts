@@ -15,8 +15,8 @@ export class InventoryAppComponent implements OnInit {
 
   constructor() {
     this.products = [
-      new ProductModel('1', 'Apple', 'images/apple.jpg', ['Fruit', 'Fresh'], 0.2),
-      new ProductModel('2', 'Rice', 'images/rice.jpg', ['Grocery', 'Dry'], 3.20)
+      new ProductModel('1', 'Apple', 'http://placehold.it/350x150?text=Apple', ['Fruit', 'Fresh'], 0.2),
+      new ProductModel('2', 'Rice', 'http://placehold.it/350x150?text=Rice', ['Grocery', 'Dry'], 3.20)
     ];
   }
 

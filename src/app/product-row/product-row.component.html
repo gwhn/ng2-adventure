@@ -1,8 +1,8 @@
 <product-image
   [url]="product.imageUrl">
 </product-image>
-<h2>{{ product.name }}</h2>
-<h6>{{ product.sku }}</h6>
+<div class="product-name">{{ product.name }}</div>
+<div class="product-sku">SKU:{{ product.sku }}</div>
 <product-department
   [departments]="product.departments">
 </product-department>
