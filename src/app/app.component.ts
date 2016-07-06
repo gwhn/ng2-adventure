@@ -13,6 +13,7 @@ import { MyData } from './my-data';
 import { InventoryAppComponent } from './inventory-app';
 import { IfComponent } from './if';
 import { SwitchComponent } from './switch';
+import { StyleComponent } from './style';
 
 @Component({
   moduleId: module.id,
@@ -31,7 +32,8 @@ import { SwitchComponent } from './switch';
     FormDataComponent,
     InventoryAppComponent,
     IfComponent,
-    SwitchComponent
+    SwitchComponent,
+    StyleComponent
   ]
 })
 export class AppComponent {

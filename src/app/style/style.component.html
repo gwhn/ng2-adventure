@@ -1,0 +1,4 @@
+<input type="text" #color>
+<input type="text" #fontSize>
+<button type="button" (click)="apply(color, fontSize)">Apply</button>
+<div [ngStyle]="{'color': color.value}" [style.font-size.px]=" fontSize.value">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex blanditiis nulla inventore id assumenda, sed magni, deserunt beatae, iusto recusandae accusantium et. Cupiditate dolores voluptate hic totam non aut commodi.</div>

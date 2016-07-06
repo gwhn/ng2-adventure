@@ -50,6 +50,7 @@ const barrels: string[] = [
   'app/product-price',
   'app/if',
   'app/switch',
+  'app/style',
   /** @cli-barrel */
 ];
 
