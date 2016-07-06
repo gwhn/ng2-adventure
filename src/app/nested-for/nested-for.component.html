@@ -1,5 +1,10 @@
 <table>
   <tr *ngFor="let row of data">
-    <td *ngFor="let column of row">{{column}}</td>
+    <td *ngFor="let column of row">{{ column }}</td>
+  </tr>
+</table>
+<table>
+  <tr *ngFor="let row of data; let i = index">
+    <td *ngFor="let column of row; let j = index">({{ i }}, {{ j }})</td>
   </tr>
 </table>
