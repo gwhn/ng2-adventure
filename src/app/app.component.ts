@@ -11,6 +11,7 @@ import { DataModelComponent } from './data-model';
 import { FormDataComponent } from './form-data';
 import { MyData } from './my-data';
 import { InventoryAppComponent } from './inventory-app';
+import { IfComponent } from './if';
 
 @Component({
   moduleId: module.id,
@@ -27,7 +28,8 @@ import { InventoryAppComponent } from './inventory-app';
     ActionLinksComponent,
     DataModelComponent,
     FormDataComponent,
-    InventoryAppComponent
+    InventoryAppComponent,
+    IfComponent
   ]
 })
 export class AppComponent {
