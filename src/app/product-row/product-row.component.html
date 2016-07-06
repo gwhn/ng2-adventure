@@ -1,0 +1,11 @@
+<product-image
+  [url]="product.imageUrl">
+</product-image>
+<h2>{{ product.name }}</h2>
+<h6>{{ product.sku }}</h6>
+<product-department
+  [departments]="product.departments">
+</product-department>
+<product-price
+  [price]="product.price">
+</product-price>

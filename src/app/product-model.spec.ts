@@ -10,6 +10,6 @@ import {ProductModel} from './product-model';
 
 describe('ProductModel', () => {
   it('should create an instance', () => {
-    expect(new ProductModel()).toBeTruthy();
+    expect(new ProductModel('1', 'test', 'image.url', ['dept1'], 1.23)).toBeTruthy();
   });
 });

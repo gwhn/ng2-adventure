@@ -10,6 +10,7 @@ import { ActionLinksComponent } from './action-links';
 import { DataModelComponent } from './data-model';
 import { FormDataComponent } from './form-data';
 import { MyData } from './my-data';
+import { InventoryAppComponent } from './inventory-app';
 
 @Component({
   moduleId: module.id,
@@ -25,7 +26,8 @@ import { MyData } from './my-data';
     ClassHostOptionComponent,
     ActionLinksComponent,
     DataModelComponent,
-    FormDataComponent
+    FormDataComponent,
+    InventoryAppComponent
   ]
 })
 export class AppComponent {
