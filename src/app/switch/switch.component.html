@@ -1,7 +1,7 @@
 <input type="number" [(ngModel)]="value">
 <div [ngSwitch]="value">
-  <p *ngSwitchWhen="1">My first option</p>
-  <p *ngSwitchWhen="2">My second option</p>
-  <p *ngSwitchWhen="3">My third option</p>
+  <p *ngSwitchCase="1">My first option</p>
+  <p *ngSwitchCase="2">My second option</p>
+  <p *ngSwitchCase="3">My third option</p>
   <p *ngSwitchDefault>Wouldn't be my choice!</p>
 </div>
