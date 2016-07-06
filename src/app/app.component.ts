@@ -14,6 +14,7 @@ import { InventoryAppComponent } from './inventory-app';
 import { IfComponent } from './if';
 import { SwitchComponent } from './switch';
 import { StyleComponent } from './style';
+import { ClassComponent } from './class';
 
 @Component({
   moduleId: module.id,
@@ -33,7 +34,8 @@ import { StyleComponent } from './style';
     InventoryAppComponent,
     IfComponent,
     SwitchComponent,
-    StyleComponent
+    StyleComponent,
+    ClassComponent
   ]
 })
 export class AppComponent {

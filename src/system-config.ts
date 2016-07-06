@@ -51,6 +51,7 @@ const barrels: string[] = [
   'app/if',
   'app/switch',
   'app/style',
+  'app/class',
   /** @cli-barrel */
 ];
 
