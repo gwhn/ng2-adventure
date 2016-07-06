@@ -15,6 +15,7 @@ import { IfComponent } from './if';
 import { SwitchComponent } from './switch';
 import { StyleComponent } from './style';
 import { ClassComponent } from './class';
+import { NestedForComponent } from './nested-for';
 
 @Component({
   moduleId: module.id,
@@ -35,7 +36,8 @@ import { ClassComponent } from './class';
     IfComponent,
     SwitchComponent,
     StyleComponent,
-    ClassComponent
+    ClassComponent,
+    NestedForComponent
   ]
 })
 export class AppComponent {
