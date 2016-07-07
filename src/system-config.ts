@@ -55,6 +55,7 @@ const barrels: string[] = [
   'app/class',
   'app/nested-for',
   'app/simple-form',
+  'app/form-builder',
   /** @cli-barrel */
 ];
 

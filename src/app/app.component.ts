@@ -17,6 +17,7 @@ import { StyleComponent } from './style';
 import { ClassComponent } from './class';
 import { NestedForComponent } from './nested-for';
 import { SimpleFormComponent } from './simple-form';
+import { FormBuilderComponent } from './form-builder';
 
 @Component({
   moduleId: module.id,
@@ -39,7 +40,8 @@ import { SimpleFormComponent } from './simple-form';
     StyleComponent,
     ClassComponent,
     NestedForComponent,
-    SimpleFormComponent
+    SimpleFormComponent,
+    FormBuilderComponent
   ]
 })
 export class AppComponent {

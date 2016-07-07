@@ -1,0 +1,8 @@
+<h2>Form builder demo</h2>
+<form [formGroup]="group" 
+      (ngSubmit)="submit(group.value)">
+  <label for="sku">SKU</label>
+  <input type="text" name="sku" id="sku" 
+         [formControl]="group.controls['sku']">
+  <button type="submit">Submit</button>
+</form>
