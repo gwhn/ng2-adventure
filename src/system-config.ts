@@ -21,6 +21,7 @@ const barrels: string[] = [
   // Angular specific barrels.
   '@angular/core',
   '@angular/common',
+  '@angular/forms',
   '@angular/compiler',
   '@angular/http',
   '@angular/router',
@@ -53,6 +54,7 @@ const barrels: string[] = [
   'app/style',
   'app/class',
   'app/nested-for',
+  'app/simple-form',
   /** @cli-barrel */
 ];
 

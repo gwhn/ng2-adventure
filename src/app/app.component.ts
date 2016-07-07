@@ -16,6 +16,7 @@ import { SwitchComponent } from './switch';
 import { StyleComponent } from './style';
 import { ClassComponent } from './class';
 import { NestedForComponent } from './nested-for';
+import { SimpleFormComponent } from './simple-form';
 
 @Component({
   moduleId: module.id,
@@ -37,7 +38,8 @@ import { NestedForComponent } from './nested-for';
     SwitchComponent,
     StyleComponent,
     ClassComponent,
-    NestedForComponent
+    NestedForComponent,
+    SimpleFormComponent
   ]
 })
 export class AppComponent {
