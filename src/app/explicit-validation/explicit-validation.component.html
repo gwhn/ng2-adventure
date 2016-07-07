@@ -1,0 +1,17 @@
+<h2>Explicit form validations</h2>
+<form [formGroup]="group" (ngSubmit)="submit(group.value)">
+  <div class="field" [class.error]="!sku.valid && sku.touched">
+    <label for="sku">SKU</label>
+    <input type="text" name="sku" id="sku" [formControl]="group.controls['sku']">
+    <div *ngIf="!sku.valid">
+      sku is invalid
+    </div>
+    <div *ngIf="sku.hasError('required')">
+      sku is required
+    </div>
+    <div *ngIf="!group.valid">
+      form is invalid
+    </div>
+  </div>
+  <button type="submit" [disabled]="!group.valid">Submit</button>
+</form>

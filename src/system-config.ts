@@ -56,6 +56,7 @@ const barrels: string[] = [
   'app/nested-for',
   'app/simple-form',
   'app/form-builder',
+  'app/explicit-validation',
   /** @cli-barrel */
 ];
 
