@@ -4,8 +4,7 @@ import {
   REACTIVE_FORM_DIRECTIVES,
   FormGroup,
   FormBuilder,
-  Validators,
-  AbstractControl
+  Validators
 } from '@angular/forms';
 
 @Component({
@@ -18,13 +17,11 @@ import {
 export class ExplicitValidationComponent implements OnInit {
 
   group: FormGroup;
-  sku: AbstractControl;
 
   constructor(fb: FormBuilder) {
     this.group = fb.group({
       'sku': ['', Validators.required]
     });
-    this.sku = this.group.controls['sku'];
   }
 
   ngOnInit() {
