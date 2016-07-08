@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { 
+import {
   FORM_DIRECTIVES,
   REACTIVE_FORM_DIRECTIVES,
   FormBuilder,
@@ -35,5 +35,9 @@ export class CustomValidationComponent implements OnInit {
     if (!fc.value.match(/^123/)) {
       return {invalidSku: true};
     }
+  }
+
+  submit(value: string): void {
+    console.log(value);
   }
 }
