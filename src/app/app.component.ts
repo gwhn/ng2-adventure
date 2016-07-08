@@ -18,7 +18,8 @@ import { ClassComponent } from './class';
 import { NestedForComponent } from './nested-for';
 import { SimpleFormComponent } from './simple-form';
 import { FormBuilderComponent } from './form-builder';
-import { ExplicitValidationComponent } from './explicit-validation'
+import { ExplicitValidationComponent } from './explicit-validation';
+import { CustomValidationComponent } from './custom-validation';
 
 @Component({
   moduleId: module.id,
@@ -43,7 +44,8 @@ import { ExplicitValidationComponent } from './explicit-validation'
     NestedForComponent,
     SimpleFormComponent,
     FormBuilderComponent,
-    ExplicitValidationComponent
+    ExplicitValidationComponent,
+    CustomValidationComponent
   ]
 })
 export class AppComponent {

@@ -57,6 +57,7 @@ const barrels: string[] = [
   'app/simple-form',
   'app/form-builder',
   'app/explicit-validation',
+  'app/custom-validation',
   /** @cli-barrel */
 ];
 
