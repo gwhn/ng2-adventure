@@ -1,0 +1,9 @@
+<h2>Two way data binding</h2>
+<h3>Ths SKU is currently {{ sku }}</h3>
+<form [formGroup]="group" (ngSubmit)="submit(group)">
+  <label for="sku">SKU</label>
+  <input type="text" name="sku" id="sku"
+         [formControl]="group.find('sku')"
+         [(ngModel)]="sku">
+  <button type="submit" [disabled]="!group.valid">Submit</button>
+</form>

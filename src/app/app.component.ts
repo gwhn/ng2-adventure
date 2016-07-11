@@ -21,6 +21,7 @@ import { FormBuilderComponent } from './form-builder';
 import { ExplicitValidationComponent } from './explicit-validation';
 import { CustomValidationComponent } from './custom-validation';
 import { ValueChangesComponent } from './value-changes';
+import { TwoWayBindComponent } from './two-way-bind';
 
 @Component({
   moduleId: module.id,
@@ -47,7 +48,8 @@ import { ValueChangesComponent } from './value-changes';
     FormBuilderComponent,
     ExplicitValidationComponent,
     CustomValidationComponent,
-    ValueChangesComponent
+    ValueChangesComponent,
+    TwoWayBindComponent
   ]
 })
 export class AppComponent {

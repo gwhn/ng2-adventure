@@ -59,6 +59,7 @@ const barrels: string[] = [
   'app/explicit-validation',
   'app/custom-validation',
   'app/value-changes',
+  'app/two-way-bind',
   /** @cli-barrel */
 ];
 
