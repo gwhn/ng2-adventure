@@ -20,6 +20,7 @@ import { SimpleFormComponent } from './simple-form';
 import { FormBuilderComponent } from './form-builder';
 import { ExplicitValidationComponent } from './explicit-validation';
 import { CustomValidationComponent } from './custom-validation';
+import { ValueChangesComponent } from './value-changes';
 
 @Component({
   moduleId: module.id,
@@ -45,7 +46,8 @@ import { CustomValidationComponent } from './custom-validation';
     SimpleFormComponent,
     FormBuilderComponent,
     ExplicitValidationComponent,
-    CustomValidationComponent
+    CustomValidationComponent,
+    ValueChangesComponent
   ]
 })
 export class AppComponent {
