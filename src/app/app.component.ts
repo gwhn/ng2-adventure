@@ -22,6 +22,7 @@ import { ExplicitValidationComponent } from './explicit-validation';
 import { CustomValidationComponent } from './custom-validation';
 import { ValueChangesComponent } from './value-changes';
 import { TwoWayBindComponent } from './two-way-bind';
+import { AnimatedListComponent } from './animated-list';
 
 @Component({
   moduleId: module.id,
@@ -49,7 +50,8 @@ import { TwoWayBindComponent } from './two-way-bind';
     ExplicitValidationComponent,
     CustomValidationComponent,
     ValueChangesComponent,
-    TwoWayBindComponent
+    TwoWayBindComponent,
+    AnimatedListComponent
   ]
 })
 export class AppComponent {
