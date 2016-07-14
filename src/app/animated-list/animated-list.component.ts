@@ -1,6 +1,5 @@
 import {
   Component,
-  OnInit,
   Input,
   trigger,
   state,
@@ -8,6 +7,8 @@ import {
   transition,
   animate
 } from '@angular/core';
+
+import { Hero } from '../hero';
 
 @Component({
   moduleId: module.id,
@@ -29,30 +30,7 @@ import {
     ])
   ]
 })
-export class AnimatedListComponent implements OnInit {
-  private heroes: Hero[];
-
-  constructor() {
-    this.heroes = [
-      new Hero('Guy'),
-      new Hero('Mary'),
-      new Hero('Charles'),
-      new Hero('Alex')
-    ];
-  }
-
-  ngOnInit() {
-  }
-
+export class AnimatedListComponent {
+  @Input() heroes: Hero[];
 }
 
-class Hero {
-  constructor(
-    public name: string,
-    public state = 'inactive'
-  ) {}
-
-  toggleState() {
-    this.state = (this.state === 'active' ? 'inactive' : 'active');
-  }
-}

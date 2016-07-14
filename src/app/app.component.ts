@@ -23,6 +23,8 @@ import { CustomValidationComponent } from './custom-validation';
 import { ValueChangesComponent } from './value-changes';
 import { TwoWayBindComponent } from './two-way-bind';
 import { AnimatedListComponent } from './animated-list';
+import { AnimatedEntranceComponent } from './animated-entrance';
+import { Hero } from './hero';
 
 @Component({
   moduleId: module.id,
@@ -51,7 +53,8 @@ import { AnimatedListComponent } from './animated-list';
     CustomValidationComponent,
     ValueChangesComponent,
     TwoWayBindComponent,
-    AnimatedListComponent
+    AnimatedListComponent,
+    AnimatedEntranceComponent
   ]
 })
 export class AppComponent {
@@ -61,6 +64,17 @@ export class AppComponent {
     new MyData(1, 'first'),
     new MyData(2, 'second', 'different')
   ];
+
+  heroes: Hero[] = [
+    new Hero('Guy'),
+    new Hero('Mary'),
+    new Hero('Charles'),
+    new Hero('Alex')
+  ];
+
+  removeHero() {
+    this.heroes.splice(this.heroes.length - 1);
+  }
 
   addData(newData: MyData): void {
     this.myData.push(newData);

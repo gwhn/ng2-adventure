@@ -2,8 +2,10 @@
   {{title}}
 </h1>
 <h2>Animations</h2>
-<animated-list></animated-list>
+<button (click)="removeHero()">Remove hero</button>
+<animated-entrance [heroes]="heroes"></animated-entrance>
 <hr>
+<animated-list [heroes]="heroes"></animated-list>
 <h2>Basics</h2>
 <hello-world></hello-world>
 <hr>
