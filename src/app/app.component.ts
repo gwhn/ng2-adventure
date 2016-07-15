@@ -26,6 +26,7 @@ import { AnimatedListComponent } from './animated-list';
 import { AnimatedEntranceComponent } from './animated-entrance';
 import { Hero } from './hero';
 import { AnimatedStatesComponent } from './animated-states';
+import { AnimatedShrinkComponent } from './animated-shrink';
 
 @Component({
   moduleId: module.id,
@@ -56,7 +57,8 @@ import { AnimatedStatesComponent } from './animated-states';
     TwoWayBindComponent,
     AnimatedListComponent,
     AnimatedEntranceComponent,
-    AnimatedStatesComponent
+    AnimatedStatesComponent,
+    AnimatedShrinkComponent
   ]
 })
 export class AppComponent {
