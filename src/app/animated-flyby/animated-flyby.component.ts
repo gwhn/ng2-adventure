@@ -19,10 +19,10 @@ import { Hero } from '../hero';
       state('in', style({opacity: 1, transform: 'translateX(0)'})),
       transition('void => *', [
         style({opacity: 0, transform: 'translate(-100%)'}),
-        animate('0.2s ease-in-out')
+        animate('0.2s ease-in')
       ]),
       transition('* => void', [
-        animate('0.5s 0.5s ease-in-out', style({opacity: 0, transform: 'translateX(100%)'}))
+        animate('0.2s 10 ease-out', style({opacity: 0, transform: 'translateX(100%)'}))
       ])
     ])
   ]

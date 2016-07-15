@@ -65,6 +65,7 @@ const barrels: string[] = [
   'app/animated-states',
   'app/animated-shrink',
   'app/animated-flyby',
+  'app/animated-bounce',
   /** @cli-barrel */
 ];
 
