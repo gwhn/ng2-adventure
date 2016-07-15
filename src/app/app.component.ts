@@ -72,6 +72,9 @@ export class AppComponent {
     new Hero('Alex')
   ];
 
+  addHero() {
+    this.heroes.push(new Hero(`Hero ${this.heroes.length + 1}`))
+  }
   removeHero() {
     this.heroes.splice(this.heroes.length - 1);
   }
