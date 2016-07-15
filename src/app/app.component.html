@@ -1,6 +1,14 @@
 <h1>
   {{title}}
 </h1>
+<h2>Attribute Directives</h2>
+<h3>Highlight directive</h3>
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<p [myHighlight]="color" [defaultColor]="'orange'">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi aspernatur distinctio ea enim et impedit in libero natus nisi, officiis quam rem saepe sed totam ullam vero voluptatem, voluptatum.</p>
 <h2>Animations</h2>
 <button (click)="addHero()">Add hero</button>
 <button (click)="removeHero()">Remove hero</button>

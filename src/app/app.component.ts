@@ -30,6 +30,7 @@ import { AnimatedShrinkComponent } from './animated-shrink';
 import { AnimatedFlybyComponent } from './animated-flyby';
 import { AnimatedBounceComponent } from './animated-bounce';
 import { AnimatedGroupComponent } from './animated-group';
+import { HighlightDirective } from './highlight.directive';
 
 @Component({
   moduleId: module.id,
@@ -64,7 +65,8 @@ import { AnimatedGroupComponent } from './animated-group';
     AnimatedShrinkComponent,
     AnimatedFlybyComponent,
     AnimatedBounceComponent,
-    AnimatedGroupComponent
+    AnimatedGroupComponent,
+    HighlightDirective
   ]
 })
 export class AppComponent {
