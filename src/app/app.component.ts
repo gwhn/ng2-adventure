@@ -25,6 +25,7 @@ import { TwoWayBindComponent } from './two-way-bind';
 import { AnimatedListComponent } from './animated-list';
 import { AnimatedEntranceComponent } from './animated-entrance';
 import { Hero } from './hero';
+import { AnimatedStatesComponent } from './animated-states';
 
 @Component({
   moduleId: module.id,
@@ -54,7 +55,8 @@ import { Hero } from './hero';
     ValueChangesComponent,
     TwoWayBindComponent,
     AnimatedListComponent,
-    AnimatedEntranceComponent
+    AnimatedEntranceComponent,
+    AnimatedStatesComponent
   ]
 })
 export class AppComponent {

@@ -62,6 +62,7 @@ const barrels: string[] = [
   'app/two-way-bind',
   'app/animated-list',
   'app/animated-entrance',
+  'app/animated-states',
   /** @cli-barrel */
 ];
 
