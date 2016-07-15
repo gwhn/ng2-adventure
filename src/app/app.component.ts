@@ -29,6 +29,7 @@ import { AnimatedStatesComponent } from './animated-states';
 import { AnimatedShrinkComponent } from './animated-shrink';
 import { AnimatedFlybyComponent } from './animated-flyby';
 import { AnimatedBounceComponent } from './animated-bounce';
+import { AnimatedGroupComponent } from './animated-group';
 
 @Component({
   moduleId: module.id,
@@ -62,7 +63,8 @@ import { AnimatedBounceComponent } from './animated-bounce';
     AnimatedStatesComponent,
     AnimatedShrinkComponent,
     AnimatedFlybyComponent,
-    AnimatedBounceComponent
+    AnimatedBounceComponent,
+    AnimatedGroupComponent
   ]
 })
 export class AppComponent {
