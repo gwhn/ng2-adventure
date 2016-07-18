@@ -68,6 +68,7 @@ const barrels: string[] = [
   'app/animated-bounce',
   'app/animated-group',
   'app/dynamic-form',
+  'app/dynamic-form-question',
   /** @cli-barrel */
 ];
 

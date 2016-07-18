@@ -9,7 +9,7 @@ import {
   REACTIVE_FORM_DIRECTIVES
 } from '@angular/forms';
 
-import { DynamicFormQuestionComponent } from './dynamic-form-question.component';
+import { DynamicFormQuestionComponent } from '../dynamic-form-question';
 import { QuestionBase } from '../question-base';
 import { QuestionControlService } from '../question-control.service';
 
@@ -17,7 +17,7 @@ import { QuestionControlService } from '../question-control.service';
   moduleId: module.id,
   selector: 'dynamic-form',
   templateUrl: 'dynamic-form.component.html',
-  styleUrls: ['dynamic-form.component.css']
+  styleUrls: ['dynamic-form.component.css'],
   directives: [
     DynamicFormQuestionComponent,
     REACTIVE_FORM_DIRECTIVES
