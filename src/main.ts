@@ -1,6 +1,7 @@
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
 import { disableDeprecatedForms, provideForms } from '@angular/forms';
+import { HTTP_PROVIDERS } from '@angular/http';
 import { AppComponent, environment } from './app/';
 
 if (environment.production) {
@@ -9,7 +10,8 @@ if (environment.production) {
 
 bootstrap(AppComponent, [
   disableDeprecatedForms(),
-  provideForms()
+  provideForms(),
+  HTTP_PROVIDERS
 ])
 .catch((err: any) => {
   console.log(err);

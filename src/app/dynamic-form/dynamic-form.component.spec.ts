@@ -11,10 +11,11 @@ import {
 } from '@angular/core/testing';
 
 import { DynamicFormComponent } from './dynamic-form.component';
+import { QuestionControlService } from "../question-control.service";
 
 describe('Component: DynamicForm', () => {
   it('should create an instance', () => {
-    let component = new DynamicFormComponent();
+    let component = new DynamicFormComponent(new QuestionControlService());
     expect(component).toBeTruthy();
   });
 });

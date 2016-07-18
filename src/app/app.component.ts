@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import './rxjs-operators';
+
 import { HelloWorldComponent } from './hello-world';
 import { HelloNameComponent } from './hello-name';
 import { HelloListComponent } from './hello-list';
