@@ -31,6 +31,8 @@ import { AnimatedFlybyComponent } from './animated-flyby';
 import { AnimatedBounceComponent } from './animated-bounce';
 import { AnimatedGroupComponent } from './animated-group';
 import { HighlightDirective } from './highlight.directive';
+import { DynamicFormComponent } from './dynamic-form';
+import { QuestionService } from './question.service';
 
 @Component({
   moduleId: module.id,
@@ -66,8 +68,10 @@ import { HighlightDirective } from './highlight.directive';
     AnimatedFlybyComponent,
     AnimatedBounceComponent,
     AnimatedGroupComponent,
-    HighlightDirective
-  ]
+    HighlightDirective,
+    DynamicFormComponent
+  ],
+  providers: [QuestionService]
 })
 export class AppComponent {
   title = 'ng2 Adventure';
@@ -84,9 +88,16 @@ export class AppComponent {
     new Hero('Alex')
   ];
 
+  questions: any[];
+
+  constructor(qs: QuestionService) {
+    this.questions = qs.getQuestions();
+  }
+
   addHero() {
     this.heroes.push(new Hero(`Hero ${this.heroes.length + 1}`))
   }
+
   removeHero() {
     this.heroes.splice(this.heroes.length - 1);
   }
