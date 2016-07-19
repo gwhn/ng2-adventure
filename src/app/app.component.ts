@@ -38,6 +38,7 @@ import { QuestionService } from './question.service';
 import { HeroListComponent } from './hero-list';
 import { WikipediaComponent } from './wikipedia';
 import {HeroService} from "./hero.service";
+import {PeekABooParentComponent} from "./peek-a-boo-parent";
 
 @Component({
   moduleId: module.id,
@@ -76,7 +77,8 @@ import {HeroService} from "./hero.service";
     HighlightDirective,
     DynamicFormComponent,
     HeroListComponent,
-    WikipediaComponent
+    WikipediaComponent,
+    PeekABooParentComponent
   ],
   providers: [QuestionService, HeroService]
 })

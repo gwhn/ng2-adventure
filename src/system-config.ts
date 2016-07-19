@@ -73,6 +73,8 @@ const barrels: string[] = [
   'app/dynamic-form-question',
   'app/hero-list',
   'app/wikipedia',
+  'app/peek-a-boo-parent',
+  'app/peek-a-boo',
   /** @cli-barrel */
 ];
 
