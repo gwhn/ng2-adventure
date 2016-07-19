@@ -1,0 +1,10 @@
+<h3>Wikipedia Demo</h3>
+<p><i>Fetches when typing stops</i></p>
+
+<input #term (keyup)="search(term.value)"/>
+
+<ul>
+  <li *ngFor="let item of items | async">
+    {{item}}
+  </li>
+</ul>

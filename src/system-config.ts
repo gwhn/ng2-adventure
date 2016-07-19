@@ -7,10 +7,12 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'angular2-in-memory-web-api': 'vendor/angular2-in-memory-web-api'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -69,6 +71,8 @@ const barrels: string[] = [
   'app/animated-group',
   'app/dynamic-form',
   'app/dynamic-form-question',
+  'app/hero-list',
+  'app/wikipedia',
   /** @cli-barrel */
 ];
 

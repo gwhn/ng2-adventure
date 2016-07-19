@@ -20,7 +20,7 @@ export class ProductListComponent implements OnInit {
   currentProduct: ProductModel;
 
   constructor() {
-    this.onProductSelected = new EventEmitter();
+    this.onProductSelected = new EventEmitter<ProductModel>();
   }
 
   ngOnInit() {

@@ -35,6 +35,9 @@ import { AnimatedGroupComponent } from './animated-group';
 import { HighlightDirective } from './highlight.directive';
 import { DynamicFormComponent } from './dynamic-form';
 import { QuestionService } from './question.service';
+import { HeroListComponent } from './hero-list';
+import { WikipediaComponent } from './wikipedia';
+import {HeroService} from "./hero.service";
 
 @Component({
   moduleId: module.id,
@@ -71,9 +74,11 @@ import { QuestionService } from './question.service';
     AnimatedBounceComponent,
     AnimatedGroupComponent,
     HighlightDirective,
-    DynamicFormComponent
+    DynamicFormComponent,
+    HeroListComponent,
+    WikipediaComponent
   ],
-  providers: [QuestionService]
+  providers: [QuestionService, HeroService]
 })
 export class AppComponent {
   title = 'ng2 Adventure';

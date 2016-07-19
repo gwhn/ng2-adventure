@@ -1,7 +1,10 @@
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
 import { disableDeprecatedForms, provideForms } from '@angular/forms';
-import { HTTP_PROVIDERS } from '@angular/http';
+import { HTTP_PROVIDERS, XHRBackend } from '@angular/http';
+import {InMemoryBackendService, SEED_DATA} from 'angular2-in-memory-web-api';
+import {HeroData} from './app/hero-data';
+
 import { AppComponent, environment } from './app/';
 
 if (environment.production) {
@@ -11,7 +14,9 @@ if (environment.production) {
 bootstrap(AppComponent, [
   disableDeprecatedForms(),
   provideForms(),
-  HTTP_PROVIDERS
+  HTTP_PROVIDERS,
+  {provide: XHRBackend, useClass: InMemoryBackendService},
+  {provide: SEED_DATA, useClass: HeroData}
 ])
 .catch((err: any) => {
   console.log(err);
