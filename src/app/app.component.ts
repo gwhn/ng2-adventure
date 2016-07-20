@@ -43,6 +43,7 @@ import {SpyComponent} from "./spy";
 import {OnChangesParentComponent} from "./on-changes-parent/on-changes-parent.component";
 import {AfterViewParentComponent} from "./after-view-parent/after-view-parent.component";
 import {AfterContentParentComponent} from "./after-content-parent/after-content-parent.component";
+import {PowerBoosterComponent} from "./power-booster/power-booster.component";
 
 @Component({
   moduleId: module.id,
@@ -86,7 +87,8 @@ import {AfterContentParentComponent} from "./after-content-parent/after-content-
     SpyComponent,
     OnChangesParentComponent,
     AfterViewParentComponent,
-    AfterContentParentComponent
+    AfterContentParentComponent,
+    PowerBoosterComponent
   ],
   providers: [QuestionService, HeroService]
 })

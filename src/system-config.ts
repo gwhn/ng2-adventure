@@ -84,6 +84,7 @@ const barrels: string[] = [
   'app/my-child',
   'app/after-content-parent',
   'app/after-content',
+  'app/power-booster',
   /** @cli-barrel */
 ];
 
