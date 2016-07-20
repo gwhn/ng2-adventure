@@ -1,0 +1,15 @@
+<div class="parent">
+  <h3>AfterContent</h3>
+
+  <div *ngIf="show">
+    <after-content>
+      <my-child></my-child>
+    </after-content>
+  </div>
+
+  <h4>-- Log --</h4>
+  <p><button (click)="reset()">Reset</button></p>
+  <div *ngFor="let msg of logs">
+    {{msg}}
+  </div>
+</div>

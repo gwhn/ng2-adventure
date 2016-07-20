@@ -42,6 +42,7 @@ import {PeekABooParentComponent} from "./peek-a-boo-parent";
 import {SpyComponent} from "./spy";
 import {OnChangesParentComponent} from "./on-changes-parent/on-changes-parent.component";
 import {AfterViewParentComponent} from "./after-view-parent/after-view-parent.component";
+import {AfterContentParentComponent} from "./after-content-parent/after-content-parent.component";
 
 @Component({
   moduleId: module.id,
@@ -84,7 +85,8 @@ import {AfterViewParentComponent} from "./after-view-parent/after-view-parent.co
     PeekABooParentComponent,
     SpyComponent,
     OnChangesParentComponent,
-    AfterViewParentComponent
+    AfterViewParentComponent,
+    AfterContentParentComponent
   ],
   providers: [QuestionService, HeroService]
 })
