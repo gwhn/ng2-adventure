@@ -78,6 +78,7 @@ const barrels: string[] = [
   'app/spy',
   'app/on-changes-parent',
   'app/on-changes',
+  'app/do-check',
   /** @cli-barrel */
 ];
 
