@@ -81,6 +81,7 @@ const barrels: string[] = [
   'app/do-check',
   'app/after-view-parent',
   'app/after-view',
+  'app/my-child',
   /** @cli-barrel */
 ];
 

@@ -1,26 +1,19 @@
 import {Component, AfterViewChecked, AfterViewInit, ViewChild} from '@angular/core';
 import {LoggerService} from "../logger.service";
-
-@Component({
-  selector: 'my-child',
-  template: '<input [(ngModel)]="hero">'
-})
-export class ChildViewComponent {
-  hero = 'Magneto'
-}
+import {MyChildComponent} from "../my-child/my-child.component";
 
 @Component({
   moduleId: module.id,
   selector: 'after-view',
   templateUrl: 'after-view.component.html',
   styleUrls: ['after-view.component.css'],
-  directives: [ChildViewComponent]
+  directives: [MyChildComponent]
 })
 export class AfterViewComponent implements AfterViewChecked, AfterViewInit {
 
   private prevHero = '';
 
-  @ViewChild(ChildViewComponent) viewChild: ChildViewComponent;
+  @ViewChild(MyChildComponent) viewChild: MyChildComponent;
 
   ngAfterViewChecked():any {
     if (this.prevHero === this.viewChild.hero) {
