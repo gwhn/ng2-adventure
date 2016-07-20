@@ -85,6 +85,7 @@ const barrels: string[] = [
   'app/after-content-parent',
   'app/after-content',
   'app/power-booster',
+  'app/power-boost-calculator',
   /** @cli-barrel */
 ];
 

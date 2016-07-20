@@ -44,6 +44,7 @@ import {OnChangesParentComponent} from "./on-changes-parent/on-changes-parent.co
 import {AfterViewParentComponent} from "./after-view-parent/after-view-parent.component";
 import {AfterContentParentComponent} from "./after-content-parent/after-content-parent.component";
 import {PowerBoosterComponent} from "./power-booster/power-booster.component";
+import {PowerBoostCalculatorComponent} from "./power-boost-calculator/power-boost-calculator.component";
 
 @Component({
   moduleId: module.id,
@@ -88,7 +89,8 @@ import {PowerBoosterComponent} from "./power-booster/power-booster.component";
     OnChangesParentComponent,
     AfterViewParentComponent,
     AfterContentParentComponent,
-    PowerBoosterComponent
+    PowerBoosterComponent,
+    PowerBoostCalculatorComponent
   ],
   providers: [QuestionService, HeroService]
 })
