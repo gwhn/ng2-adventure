@@ -1,0 +1,17 @@
+<div class="parent">
+  <h3>{{title}}</h3>
+
+  <table>
+    <tr>
+      <td>Power:</td>
+      <td><input [(ngModel)]="power"></td>
+    </tr>
+    <tr>
+      <td>Hero.name:</td>
+      <td><input [(ngModel)]="hero.name"></td>
+    </tr>
+  </table>
+  <p><button (click)="reset()">Reset log</button></p>
+
+  <on-changes [hero]="hero" [power]="power"></on-changes>
+</div>

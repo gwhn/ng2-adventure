@@ -76,6 +76,8 @@ const barrels: string[] = [
   'app/peek-a-boo-parent',
   'app/peek-a-boo',
   'app/spy',
+  'app/on-changes-parent',
+  'app/on-changes',
   /** @cli-barrel */
 ];
 

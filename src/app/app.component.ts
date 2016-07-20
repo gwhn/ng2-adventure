@@ -40,6 +40,7 @@ import { WikipediaComponent } from './wikipedia';
 import {HeroService} from "./hero.service";
 import {PeekABooParentComponent} from "./peek-a-boo-parent";
 import {SpyComponent} from "./spy";
+import {OnChangesParentComponent} from "./on-changes-parent/on-changes-parent.component";
 
 @Component({
   moduleId: module.id,
@@ -80,7 +81,8 @@ import {SpyComponent} from "./spy";
     HeroListComponent,
     WikipediaComponent,
     PeekABooParentComponent,
-    SpyComponent
+    SpyComponent,
+    OnChangesParentComponent
   ],
   providers: [QuestionService, HeroService]
 })
