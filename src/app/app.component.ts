@@ -45,6 +45,7 @@ import {AfterViewParentComponent} from "./after-view-parent/after-view-parent.co
 import {AfterContentParentComponent} from "./after-content-parent/after-content-parent.component";
 import {PowerBoosterComponent} from "./power-booster/power-booster.component";
 import {PowerBoostCalculatorComponent} from "./power-boost-calculator/power-boost-calculator.component";
+import {HeroAsyncMessageComponent} from "./hero-async-message/hero-async-message.component";
 
 @Component({
   moduleId: module.id,
@@ -90,7 +91,8 @@ import {PowerBoostCalculatorComponent} from "./power-boost-calculator/power-boos
     AfterViewParentComponent,
     AfterContentParentComponent,
     PowerBoosterComponent,
-    PowerBoostCalculatorComponent
+    PowerBoostCalculatorComponent,
+    HeroAsyncMessageComponent
   ],
   providers: [QuestionService, HeroService]
 })
