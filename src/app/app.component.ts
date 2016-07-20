@@ -41,6 +41,7 @@ import {HeroService} from "./hero.service";
 import {PeekABooParentComponent} from "./peek-a-boo-parent";
 import {SpyComponent} from "./spy";
 import {OnChangesParentComponent} from "./on-changes-parent/on-changes-parent.component";
+import {AfterViewParentComponent} from "./after-view-parent/after-view-parent.component";
 
 @Component({
   moduleId: module.id,
@@ -82,7 +83,8 @@ import {OnChangesParentComponent} from "./on-changes-parent/on-changes-parent.co
     WikipediaComponent,
     PeekABooParentComponent,
     SpyComponent,
-    OnChangesParentComponent
+    OnChangesParentComponent,
+    AfterViewParentComponent
   ],
   providers: [QuestionService, HeroService]
 })

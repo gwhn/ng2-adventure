@@ -79,6 +79,8 @@ const barrels: string[] = [
   'app/on-changes-parent',
   'app/on-changes',
   'app/do-check',
+  'app/after-view-parent',
+  'app/after-view',
   /** @cli-barrel */
 ];
 
