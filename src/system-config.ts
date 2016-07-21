@@ -87,6 +87,13 @@ const barrels: string[] = [
   'app/power-booster',
   'app/power-boost-calculator',
   'app/hero-async-message',
+  'app/pipe-demo',
+  'app/lifecycle-hooks-demo',
+  'app/http-client-demo',
+  'app/dynamic-form-demo',
+  'app/attribute-directives-demo',
+  'app/animations-demo',
+  'app/basics-demo',
   /** @cli-barrel */
 ];
 

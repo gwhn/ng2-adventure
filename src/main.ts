@@ -6,12 +6,14 @@ import {InMemoryBackendService, SEED_DATA} from 'angular2-in-memory-web-api';
 import {HeroData} from './app/hero-data';
 
 import { AppComponent, environment } from './app/';
+import {appRouterProviders} from "./app/app.routes";
 
 if (environment.production) {
   enableProdMode();
 }
 
 bootstrap(AppComponent, [
+  appRouterProviders,
   disableDeprecatedForms(),
   provideForms(),
   HTTP_PROVIDERS,
