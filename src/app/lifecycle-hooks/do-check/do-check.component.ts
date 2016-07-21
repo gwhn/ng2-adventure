@@ -1,5 +1,5 @@
 import {Component, Input, DoCheck, OnChanges, SimpleChange} from '@angular/core';
-import {Hero} from "../hero";
+import {Hero} from "../../hero";
 
 @Component({
   moduleId: module.id,

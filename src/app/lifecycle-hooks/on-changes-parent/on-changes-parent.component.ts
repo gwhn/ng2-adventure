@@ -1,6 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
 import {OnChangesComponent} from "../on-changes/on-changes.component";
-import {Hero} from "../hero";
+import {Hero} from "../../hero";
 import {DoCheckComponent} from "../do-check/do-check.component";
 
 @Component({
