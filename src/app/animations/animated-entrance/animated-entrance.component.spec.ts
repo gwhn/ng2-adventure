@@ -10,11 +10,12 @@ import {
   async, inject
 } from '@angular/core/testing';
 
-import { AnimatedGroupComponent } from './animated-group.component';
+import { AnimatedEntranceComponent } from './animated-entrance.component';
+import {HeroesService} from "../heroes.service";
 
-describe('Component: AnimatedGroup', () => {
+describe('Component: AnimatedEntrance', () => {
   it('should create an instance', () => {
-    let component = new AnimatedGroupComponent();
+    let component = new AnimatedEntranceComponent(new HeroesService());
     expect(component).toBeTruthy();
   });
 });

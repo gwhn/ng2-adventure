@@ -1,0 +1,19 @@
+<h2>Animations</h2>
+
+<nav>
+  <a [routerLink]="['/animations', 'group']" routerLinkActive="active">Group</a>
+  <a [routerLink]="['/animations', 'bounce']" routerLinkActive="active">Bounce</a>
+  <a [routerLink]="['/animations', 'flyby']" routerLinkActive="active">Fly-by</a>
+  <a [routerLink]="['/animations', 'shrink']" routerLinkActive="active">Shrink</a>
+  <a [routerLink]="['/animations', 'states']" routerLinkActive="active">States</a>
+  <a [routerLink]="['/animations', 'entrance']" routerLinkActive="active">Entrance</a>
+  <a [routerLink]="['/animations', 'list']" routerLinkActive="active">List</a>
+</nav>
+
+<div>
+  <button (click)="addNew()">Add hero</button>
+  <button (click)="removeLast()">Remove hero</button>
+</div>
+
+<router-outlet></router-outlet>
+

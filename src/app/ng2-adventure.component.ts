@@ -6,11 +6,11 @@ import {ROUTER_DIRECTIVES} from "@angular/router";
 
 @Component({
   moduleId: module.id,
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css'],
+  selector: 'ng2-adventure-app',
+  templateUrl: 'ng2-adventure.component.html',
+  styleUrls: ['ng2-adventure.component.css'],
   directives: [ROUTER_DIRECTIVES]
 })
-export class AppComponent {
+export class Ng2AdventureAppComponent {
   title = 'ng2 Adventure';
 }

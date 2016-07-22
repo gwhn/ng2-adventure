@@ -8,7 +8,8 @@ import {
   style
 } from '@angular/core';
 
-import { Hero } from '../hero';
+import { Hero } from '../../hero';
+import {HeroesService} from "../heroes.service";
 @Component({
   moduleId: module.id,
   selector: 'animated-flyby',
@@ -28,5 +29,10 @@ import { Hero } from '../hero';
   ]
 })
 export class AnimatedFlybyComponent {
+
   @Input() heroes: Hero[];
+
+  constructor(hs: HeroesService) {
+    this.heroes = hs.heroes;
+  }
 }

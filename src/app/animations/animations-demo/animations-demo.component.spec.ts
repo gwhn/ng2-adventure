@@ -10,11 +10,12 @@ import {
   async, inject
 } from '@angular/core/testing';
 
-import { AnimatedBounceComponent } from './animated-bounce.component';
+import { AnimationsDemoComponent } from './animations-demo.component';
+import {HeroesService} from "../heroes.service";
 
-describe('Component: AnimatedBounce', () => {
+describe('Component: AnimationsDemo', () => {
   it('should create an instance', () => {
-    let component = new AnimatedBounceComponent();
+    let component = new AnimationsDemoComponent(new HeroesService());
     expect(component).toBeTruthy();
   });
 });

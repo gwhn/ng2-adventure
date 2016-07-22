@@ -16,7 +16,7 @@ export const lifecycleHooksRoutes: RouterConfig = [
       {path: 'on-changes', component: OnChangesParentComponent},
       {path: 'after-view', component: AfterViewParentComponent},
       {path: 'after-content', component: AfterContentParentComponent},
-      {path: '', redirectTo: 'lifecycle-hooks/peek-a-boo'}
+      {path: '', redirectTo: '/lifecycle-hooks/peek-a-boo'}
     ]
   }
 ];

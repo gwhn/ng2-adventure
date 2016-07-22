@@ -8,7 +8,8 @@ import {
   animate
 } from '@angular/core';
 
-import { Hero } from '../hero';
+import { Hero } from '../../hero';
+import {HeroesService} from "../heroes.service";
 
 @Component({
   moduleId: module.id,
@@ -29,5 +30,10 @@ import { Hero } from '../hero';
   ]
 })
 export class AnimatedEntranceComponent {
+
   @Input() heroes: Hero[];
+
+  constructor(hs: HeroesService) {
+    this.heroes = hs.heroes;
+  }
 }
