@@ -13,7 +13,7 @@ export class ConvertingSetComponent implements OnInit {
   messages: string[] = [];
 
   ngOnInit() {
-    let mySet: {} = new Set([1, 2, 3, 4, 5, 6, 7]);
+    const mySet: {} = new Set([1, 2, 3, 4, 5, 6, 7]);
 
     Observable.from(<ObservableInput<number>>mySet)
       .subscribe(

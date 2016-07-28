@@ -4,6 +4,7 @@ import {TimerComponent} from "./timer/timer.component";
 import {ConvertingArrayComponent} from "./converting-array/converting-array.component";
 import {ConvertingObjectComponent} from "./converting-object/converting-object.component";
 import {ConvertingSetComponent} from "./converting-set/converting-set.component";
+import {ConvertingMapComponent} from "./converting-map/converting-map.component";
 
 export const rxjsRoutesConfig: RouterConfig = [
   {
@@ -14,6 +15,7 @@ export const rxjsRoutesConfig: RouterConfig = [
       {path: 'converting-array', component: ConvertingArrayComponent },
       {path: 'converting-object', component: ConvertingObjectComponent },
       {path: 'converting-set', component: ConvertingSetComponent },
+      {path: 'converting-map', component: ConvertingMapComponent },
       {path: '', redirectTo: '/rxjs/timer'}
     ]
   }
