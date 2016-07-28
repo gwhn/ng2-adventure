@@ -11,8 +11,6 @@ export class TimerComponent implements OnInit {
 
   messages: string[] = [];
 
-  constructor() {}
-
   ngOnInit() {
     Observable.timer(5000, 1000)
       .timestamp()

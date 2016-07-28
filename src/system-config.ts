@@ -96,6 +96,7 @@ const barrels: string[] = [
   'app/basics-demo',
   'app/rx-js-demo',
   'app/rxjs/timer',
+  'app/rxjs/converting-array',
   /** @cli-barrel */
 ];
 
