@@ -98,6 +98,7 @@ const barrels: string[] = [
   'app/rxjs/timer',
   'app/rxjs/converting-array',
   'app/rxjs/converting-object',
+  'app/rxjs/converting-set',
   /** @cli-barrel */
 ];
 

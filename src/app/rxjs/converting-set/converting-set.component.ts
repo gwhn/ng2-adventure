@@ -1,29 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import {Observable} from "rxjs/Rx";
+import {ObservableInput} from "rxjs/Observable";
 
 @Component({
   moduleId: module.id,
-  selector: 'converting-object',
-  templateUrl: 'converting-object.component.html',
-  styleUrls: ['converting-object.component.css']
+  selector: 'converting-set',
+  templateUrl: 'converting-set.component.html',
+  styleUrls: ['converting-set.component.css']
 })
-export class ConvertingObjectComponent implements OnInit {
+export class ConvertingSetComponent implements OnInit {
 
   messages: string[] = [];
 
   ngOnInit() {
-    const obj: {
-      [index: number]: number;
-      length: number;
-    } = {
-      length: 10
-    };
+    let mySet: {} = new Set([1, 2, 3, 4, 5, 6, 7]);
 
-    Observable.from(obj, (v, k) => {return k + 1;})
+    Observable.from(<ObservableInput<number>>mySet)
       .subscribe(
         x => this.messages.push(`onNext: ${x}`),
         e => this.messages.push(`onError: ${e}`),
         () => this.messages.push('onCompleted')
       );
   }
+
 }
