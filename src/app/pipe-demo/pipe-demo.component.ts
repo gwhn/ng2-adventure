@@ -12,7 +12,6 @@ import {PowerBoosterComponent} from "../power-booster/power-booster.component";
     PowerBoosterComponent,
     PowerBoostCalculatorComponent,
     HeroAsyncMessageComponent
-
   ]
 })
 export class PipeDemoComponent {}

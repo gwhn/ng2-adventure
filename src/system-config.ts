@@ -94,6 +94,8 @@ const barrels: string[] = [
   'app/attribute-directives-demo',
   'app/animations-demo',
   'app/basics-demo',
+  'app/rx-js-demo',
+  'app/rxjs/timer',
   /** @cli-barrel */
 ];
 
