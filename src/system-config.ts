@@ -100,6 +100,7 @@ const barrels: string[] = [
   'app/rxjs/converting-object',
   'app/rxjs/converting-set',
   'app/rxjs/converting-map',
+  'app/rxjs/cold-stream',
   /** @cli-barrel */
 ];
 

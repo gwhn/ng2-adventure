@@ -1,0 +1,10 @@
+<h3>Cold Stream</h3>
+
+<p>
+  Cold observable sequence using interval operator<br>
+  <em>Notice that the sequence is reset for each subscriber, in which the second subscription will restart the sequence from the first value.</em>
+</p>
+
+<div *ngFor="let msg of messages">
+  {{msg}}
+</div>

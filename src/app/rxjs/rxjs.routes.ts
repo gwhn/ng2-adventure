@@ -5,6 +5,7 @@ import {ConvertingArrayComponent} from "./converting-array/converting-array.comp
 import {ConvertingObjectComponent} from "./converting-object/converting-object.component";
 import {ConvertingSetComponent} from "./converting-set/converting-set.component";
 import {ConvertingMapComponent} from "./converting-map/converting-map.component";
+import {ColdStreamComponent} from "./cold-stream/cold-stream.component";
 
 export const rxjsRoutesConfig: RouterConfig = [
   {
@@ -16,6 +17,7 @@ export const rxjsRoutesConfig: RouterConfig = [
       {path: 'converting-object', component: ConvertingObjectComponent },
       {path: 'converting-set', component: ConvertingSetComponent },
       {path: 'converting-map', component: ConvertingMapComponent },
+      {path: 'cold-stream', component: ColdStreamComponent },
       {path: '', redirectTo: '/rxjs/timer'}
     ]
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Observable} from "rxjs/Rx";
 
 @Component({
@@ -9,13 +9,18 @@ import {Observable} from "rxjs/Rx";
 })
 export class TimerComponent implements OnInit {
 
-  messages: string[] = [];
+  messages:string[] = [];
 
   ngOnInit() {
-    Observable.timer(5000, 1000)
-      .timestamp()
-      .subscribe(x => {
-        this.messages.push(`${x.value} - ${x.timestamp}`);
-      });
+    var source = Observable.timer(5000, 1000)
+      .timestamp();
+
+    var subscription = source.subscribe(x => {
+      this.messages.push(`${x.value} - ${x.timestamp}`);
+    });
+
+    setTimeout(() => {
+      subscription.unsubscribe();
+    }, 20000);
   }
 }
