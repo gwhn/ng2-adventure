@@ -6,18 +6,22 @@ import {ConvertingObjectComponent} from "./converting-object/converting-object.c
 import {ConvertingSetComponent} from "./converting-set/converting-set.component";
 import {ConvertingMapComponent} from "./converting-map/converting-map.component";
 import {ColdStreamComponent} from "./cold-stream/cold-stream.component";
+import {HotStreamComponent} from "./hot-stream/hot-stream.component";
+import {FromEventComponent} from "./from-event/from-event.component";
 
-export const rxjsRoutesConfig: RouterConfig = [
+export const rxjsRoutesConfig:RouterConfig = [
   {
     path: 'rxjs',
     component: RxJsDemoComponent,
     children: [
-      {path: 'timer', component: TimerComponent },
-      {path: 'converting-array', component: ConvertingArrayComponent },
-      {path: 'converting-object', component: ConvertingObjectComponent },
-      {path: 'converting-set', component: ConvertingSetComponent },
-      {path: 'converting-map', component: ConvertingMapComponent },
-      {path: 'cold-stream', component: ColdStreamComponent },
+      {path: 'timer', component: TimerComponent},
+      {path: 'converting-array', component: ConvertingArrayComponent},
+      {path: 'converting-object', component: ConvertingObjectComponent},
+      {path: 'converting-set', component: ConvertingSetComponent},
+      {path: 'converting-map', component: ConvertingMapComponent},
+      {path: 'cold-stream', component: ColdStreamComponent},
+      {path: 'hot-stream', component: HotStreamComponent},
+      {path: 'from-event', component: FromEventComponent},
       {path: '', redirectTo: '/rxjs/timer'}
     ]
   }

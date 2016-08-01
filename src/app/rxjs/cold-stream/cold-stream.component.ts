@@ -15,14 +15,14 @@ export class ColdStreamComponent implements OnInit {
     const source = Observable.interval(1000);
 
     const subscription1 = source.subscribe(
-      (x) => this.messages.push('Observer 1: onNext: ' + x),
-      (e) => this.messages.push('Observer 1: onError: ' + e.message),
+      (x) => this.messages.push(`Observer 1: onNext: ${x}`),
+      (e) => this.messages.push(`Observer 1: onError: ${e.message}`),
       () => this.messages.push('Observer 1: onCompleted')
     );
 
     const subscription2 = source.subscribe(
-      (x) => this.messages.push('Observer 2: onNext: ' + x),
-      (e) => this.messages.push('Observer 2: onError: ' + e.message),
+      (x) => this.messages.push(`Observer 2: onNext: ${x}`),
+      (e) => this.messages.push(`Observer 2: onError: ${e.message}`),
       () => this.messages.push('Observer 2: onCompleted')
     );
 

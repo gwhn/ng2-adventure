@@ -101,6 +101,8 @@ const barrels: string[] = [
   'app/rxjs/converting-set',
   'app/rxjs/converting-map',
   'app/rxjs/cold-stream',
+  'app/rxjs/hot-stream',
+  'app/rxjs/from-event',
   /** @cli-barrel */
 ];
 
