@@ -8,6 +8,7 @@ import {ConvertingMapComponent} from "./converting-map/converting-map.component"
 import {ColdStreamComponent} from "./cold-stream/cold-stream.component";
 import {HotStreamComponent} from "./hot-stream/hot-stream.component";
 import {FromEventComponent} from "./from-event/from-event.component";
+import {WatchChildEventsComponent} from "./watch-child-events/watch-child-events.component";
 
 export const rxjsRoutesConfig:RouterConfig = [
   {
@@ -22,6 +23,7 @@ export const rxjsRoutesConfig:RouterConfig = [
       {path: 'cold-stream', component: ColdStreamComponent},
       {path: 'hot-stream', component: HotStreamComponent},
       {path: 'from-event', component: FromEventComponent},
+      {path: 'watch-child-events', component: WatchChildEventsComponent},
       {path: '', redirectTo: '/rxjs/timer'}
     ]
   }

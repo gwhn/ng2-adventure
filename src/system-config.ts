@@ -103,6 +103,8 @@ const barrels: string[] = [
   'app/rxjs/cold-stream',
   'app/rxjs/hot-stream',
   'app/rxjs/from-event',
+  'app/rxjs/watch-child-events',
+  'app/rxjs/child-event-producer',
   /** @cli-barrel */
 ];
 

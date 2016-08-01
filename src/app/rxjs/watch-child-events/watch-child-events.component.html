@@ -1,0 +1,21 @@
+<h3>Watch Child Event</h3>
+
+<h4>Event: {{message}}</h4>
+
+<h4>p0 - Observable from DOM Event</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores commodi debitis dicta distinctio ea
+  eligendi est et facilis fugiat harum, impedit neque nihil optio quae tempora temporibus totam velit!</p>
+
+<h4>p1 - Observable from Subject</h4>
+<p (click)="p1Click($event)">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto et nihil.
+  Accusamus assumenda facere fugit repellendus sed. Aliquam dolorem ea est harum labore magni maxime molestiae
+  necessitatibus quod voluptas?</p>
+
+<h4>p2 - Observable from EventEmitter output of child component</h4>
+<child-event-producer (click)="p2Click($event)"></child-event-producer>
+
+<h4>p3 - Observable from EventEmitter attached to template element</h4>
+<p (click)="p3Click($event)">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ducimus laborum molestiae
+  placeat tenetur! Excepturi fugiat ipsam rem. Aspernatur consectetur ex, iusto modi molestias reiciendis sed! At eius
+  perferendis temporibus.</p>
+

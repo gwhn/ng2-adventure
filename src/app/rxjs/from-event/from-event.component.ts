@@ -9,9 +9,11 @@ import {Observable} from "rxjs/Rx";
 })
 export class FromEventComponent {
 
-  message:any;
+  message = '';
 
-  constructor(el:ElementRef) {
+  constructor(private el:ElementRef) {
+    console.log('ElementRef', el);
+
     const events = [
       'blur',
       'focus',
