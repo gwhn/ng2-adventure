@@ -7,7 +7,7 @@ describe('ng2-adventure App', function() {
     page = new Ng2AdventurePage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display messages saying app works', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('app works!');
   });

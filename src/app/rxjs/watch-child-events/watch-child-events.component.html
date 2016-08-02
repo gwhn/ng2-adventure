@@ -1,21 +1,21 @@
 <h3>Watch Child Event</h3>
 
-<h4>Event: {{message}}</h4>
+<em>Hover mouse over bordered box</em>
 
-<h4>p0 - Observable from DOM Event</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores commodi debitis dicta distinctio ea
-  eligendi est et facilis fugiat harum, impedit neque nihil optio quae tempora temporibus totam velit!</p>
+<p class="p0">p0 - Observable from DOM Event</p>
 
-<h4>p1 - Observable from Subject</h4>
-<p (click)="p1Click($event)">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto et nihil.
-  Accusamus assumenda facere fugit repellendus sed. Aliquam dolorem ea est harum labore magni maxime molestiae
-  necessitatibus quod voluptas?</p>
+<p (mousemove)="p1Handler($event)">p1 - Observable from Subject</p>
 
-<h4>p2 - Observable from EventEmitter output of child component</h4>
-<child-event-producer (click)="p2Click($event)"></child-event-producer>
+<child-event-producer (event1)="p2Handler1($event)" (event3)="p2Handler3($event)">
+  p2 - Observable from EventEmitter output of child component
+</child-event-producer>
 
-<h4>p3 - Observable from EventEmitter attached to template element</h4>
-<p (click)="p3Click($event)">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ducimus laborum molestiae
-  placeat tenetur! Excepturi fugiat ipsam rem. Aspernatur consectetur ex, iusto modi molestias reiciendis sed! At eius
-  perferendis temporibus.</p>
+<p (mousemove)="p3Handler($event)">p3 - Observable from EventEmitter attached to template element</p>
+
+<p #p4>p4 - Observable from EventEmitter attached to local template variable</p>
+
+<h4>-- Events --</h4>
+<div *ngFor="let message of messages">
+  {{message}}
+</div>
 

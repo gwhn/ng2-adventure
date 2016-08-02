@@ -86,7 +86,7 @@ const barrels: string[] = [
   'app/after-content',
   'app/power-booster',
   'app/power-boost-calculator',
-  'app/hero-async-message',
+  'app/hero-async-messages',
   'app/pipe-demo',
   'app/lifecycle-hooks-demo',
   'app/http-client-demo',

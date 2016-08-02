@@ -4,8 +4,8 @@ import {Observable} from "rxjs/Rx";
 @Component({
   moduleId: module.id,
   selector: 'hero-message',
-  templateUrl: 'hero-async-message.component.html',
-  styleUrls: ['hero-async-message.component.css']
+  templateUrl: 'hero-async-messages.component.html',
+  styleUrls: ['hero-async-messages.component.css']
 })
 export class HeroAsyncMessageComponent {
 
